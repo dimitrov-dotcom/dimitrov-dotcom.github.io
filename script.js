@@ -38,3 +38,13 @@ function revealOnScroll(){
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+/* ================= NAVBAR SCROLL ================= */
+const navbar = document.querySelector('.nav');
+
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 60){
+    navbar.classList.add('scrolled');
+  }else{
+    navbar.classList.remove('scrolled');
+  }
+});
