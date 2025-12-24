@@ -125,7 +125,15 @@ h2{
   border-radius:10px;
   margin-bottom:20px;
 }
+#contact a{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:600;
+}
 
+#contact a:hover{
+  text-decoration:underline;
+}
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
