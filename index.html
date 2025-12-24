@@ -3,287 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PT. Alsinar Indo Abadi</title>
 
-<title>PT Alsinar Indo Abadi</title>
-
-<!-- SEO -->
-<meta name="description" content="PT Alsinar Indo Abadi - General Supplier & Contractor, Konstruksi, Sewa Kendaraan, Scrap Iron, Catering">
-<meta name="keywords" content="General Supplier, Contractor, Scrap Iron, Sewa Mobil, Catering">
-<meta name="author" content="PT Alsinar Indo Abadi">
-
-<!-- Google Search Console -->
 <meta name="google-site-verification" content="pCdyaP5mfxLFCc3_x5S3Pi9AEjRLqXI7DevEmXT1eTA" />
 
-<!-- AOS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<style>
-:root{
-  --bg:#020617;
-  --card:rgba(2,6,23,.75);
-  --text:#e5e7eb;
-  --muted:#94a3b8;
-  --accent:#38bdf8;
-}
-
-*{margin:0;padding:0;box-sizing:border-box}
-
-body{
-  font-family:system-ui,-apple-system,Segoe UI,Roboto;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.7;
-}
-
-/* HEADER */
-header{
-  position:fixed;
-  top:0;
-  width:100%;
-  background:rgba(2,6,23,.65);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid rgba(255,255,255,.06);
-  z-index:1000;
-}
-
-.nav{
-  max-width:1200px;
-  margin:auto;
-  padding:20px 20px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-/* LOGO BESAR */
-.logo{
-  display:flex;
-  align-items:center;
-  gap:16px;
-}
-
-.logo img{
-  height:78px; /* 🔥 LOGO BESAR */
-  width:auto;
-}
-
-.logo-text{
-  display:flex;
-  flex-direction:column;
-  line-height:1.1;
-}
-
-.logo-text strong{
-  font-size:22px;
-  font-weight:800;
-  letter-spacing:1px;
-  color:var(--accent);
-}
-
-.logo-text span{
-  font-size:13px;
-  letter-spacing:2px;
-  color:var(--muted);
-}
-
-/* NAV */
-nav ul{
-  display:flex;
-  gap:28px;
-  list-style:none;
-}
-
-nav a{
-  text-decoration:none;
-  color:var(--text);
-  font-size:14px;
-}
-
-nav a:hover{color:var(--accent)}
-
-/* HAMBURGER */
-.hamburger{
-  display:none;
-  flex-direction:column;
-  cursor:pointer;
-}
-
-.hamburger span{
-  width:26px;
-  height:3px;
-  background:#fff;
-  margin:4px 0;
-}
-
-/* SECTION */
-section{
-  max-width:1200px;
-  margin:auto;
-  padding:120px 20px;
-}
-
-.hero{
-  padding-top:220px;
-  text-align:center;
-}
-
-.hero h1{
-  font-size:3.2rem;
-  font-weight:800;
-}
-
-.hero p{
-  margin-top:18px;
-  max-width:780px;
-  margin-inline:auto;
-  color:var(--muted);
-}
-
-.card{
-  background:var(--card);
-  border:1px solid rgba(255,255,255,.06);
-  border-radius:18px;
-  padding:32px;
-  margin-top:40px;
-}
-
-h2{
-  color:var(--accent);
-  margin-bottom:16px;
-}
-
-ul li{margin-bottom:10px}
-
-/* FOOTER */
-footer{
-  text-align:center;
-  padding:40px 20px;
-  border-top:1px solid rgba(255,255,255,.06);
-  color:var(--muted);
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-  .logo img{height:58px}
-  .logo-text strong{font-size:17px}
-  .logo-text span{font-size:11px}
-
-  nav ul{
-    position:absolute;
-    top:90px;
-    right:20px;
-    background:#020617;
-    flex-direction:column;
-    padding:20px;
-    border-radius:14px;
-    display:none;
-  }
-
-  nav ul.active{display:flex}
-  .hamburger{display:flex}
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
   <div class="nav">
-
     <div class="logo">
-      <img src="images/LOGOALSINAR.png" alt="PT Alsinar Indo Abadi">
+      <img src="images/LOGOALSINAR.png" alt="Logo PT Alsinar Indo Abadi">
       <div class="logo-text">
-        <strong>ALSINAR</strong>
-        <span>INDO ABADI</span>
+        <strong>PT. ALSINAR INDO ABADI</strong>
+        <span>General Supplier & Contractor</span>
       </div>
     </div>
-
-    <nav>
-      <ul id="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#vision">Visi & Misi</a></li>
-        <li><a href="#services">Layanan</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
-    </nav>
 
     <div class="hamburger" onclick="toggleMenu()">
       <span></span><span></span><span></span>
     </div>
 
+    <nav id="menu">
+      <ul>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#vision">Visi & Misi</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 
-<section id="home" class="hero" data-aos="fade-up">
-  <h1>PT Alsinar Indo Abadi</h1>
+<!-- HERO -->
+<section class="hero reveal">
+  <h1>Solusi Terpadu & Profesional</h1>
   <p>
-    Perusahaan penyedia layanan terpadu di bidang General Supplier & Contractor,
-    konstruksi bangunan, sewa kendaraan operasional, pengolahan scrap iron,
-    serta jasa catering dengan standar profesional.
+    Perusahaan penyedia layanan General Supplier & Contractor
+    dengan komitmen kualitas, profesionalisme, dan kepercayaan.
   </p>
 </section>
 
-<section id="about" data-aos="fade-up">
+<!-- ABOUT -->
+<section id="about" class="reveal">
+  <h2>Tentang Perusahaan</h2>
   <div class="card">
-    <h2>Tentang Perusahaan</h2>
     <p>
-      PT Alsinar Indo Abadi berkomitmen memberikan layanan terbaik dengan
-      mengutamakan kualitas, ketepatan waktu, dan profesionalisme.
+      PT. Alsinar Indo Abadi bergerak di bidang konstruksi bangunan,
+      sewa mobil operasional, pengolahan scrap iron (besi tua),
+      jasa catering, serta general supplier.
     </p>
   </div>
 </section>
 
-<section id="vision" data-aos="fade-up">
+<!-- SERVICES -->
+<section id="services" class="reveal">
+  <h2>Layanan Kami</h2>
+  <div class="grid">
+    <div class="card">General Supplier & Contractor</div>
+    <div class="card">Konstruksi Bangunan</div>
+    <div class="card">Sewa Mobil Operasional</div>
+    <div class="card">Pengolahan Scrap Iron</div>
+    <div class="card">Jasa Catering</div>
+  </div>
+</section>
+
+<!-- VISION -->
+<section id="vision" class="reveal">
+  <h2>Visi & Misi</h2>
+
   <div class="card">
-    <h2>Visi</h2>
+    <h3>Visi</h3>
     <p>
-      Menjadi perusahaan penyedia layanan terpadu yang terpercaya dan unggul.
+      Menjadi perusahaan penyedia layanan terpadu yang terpercaya
+      dan unggul dengan mengutamakan kualitas dan kepuasan pelanggan.
     </p>
+  </div>
 
-    <h2>Misi</h2>
+  <div class="card">
+    <h3>Misi</h3>
     <ul>
-      <li>Layanan berkualitas tinggi di setiap bidang usaha</li>
-      <li>Solusi efisien dan inovatif bagi klien</li>
-      <li>Hubungan bisnis jangka panjang berbasis kepercayaan</li>
-      <li>Tim profesional dan berdedikasi</li>
-      <li>Bisnis berkelanjutan & ramah lingkungan</li>
+      <li>Memberikan layanan berkualitas tinggi</li>
+      <li>Mengutamakan solusi efisien & tepat waktu</li>
+      <li>Membangun hubungan jangka panjang</li>
+      <li>Mengembangkan tim profesional</li>
+      <li>Mendukung bisnis berkelanjutan & ramah lingkungan</li>
     </ul>
   </div>
 </section>
 
-<section id="services" data-aos="fade-up">
-  <div class="card">
-    <h2>Layanan Kami</h2>
-    <ul>
-      <li>General Supplier & Contractor</li>
-      <li>Konstruksi Bangunan</li>
-      <li>Sewa Kendaraan Operasional</li>
-      <li>Pengolahan Scrap Iron</li>
-      <li>Jasa Catering</li>
-    </ul>
-  </div>
-</section>
-
-<section id="contact" data-aos="fade-up">
-  <div class="card">
-    <h2>Kontak</h2>
-    <p>Email: info@alsinar.co.id</p>
-    <p>Telepon: 08xxxxxxxxxx</p>
-  </div>
-</section>
-
-<footer>
-  © 2025 PT Alsinar Indo Abadi. All rights reserved.
+<!-- FOOTER -->
+<footer id="contact">
+  <p>© 2025 PT. Alsinar Indo Abadi</p>
 </footer>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init({duration:900,once:true});
-function toggleMenu(){
-  document.getElementById("menu").classList.toggle("active");
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
