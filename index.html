@@ -3,93 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PT. ALSINAR INDO ABADI</title>
-  <meta name="description" content="PT. Alsinar Indo Abadi - General Supplier, Contractor, Scrap Iron & Catering">
+
+  <title>PT Alsinar Indo Abadi | General Supplier & Contractor</title>
+
+  <meta name="description" content="PT Alsinar Indo Abadi adalah perusahaan General Supplier & Contractor terpercaya.">
+  <meta name="author" content="PT Alsinar Indo Abadi">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header>
-    <div class="nav">
-      <div class="logo-container">
-        <img src="images/LOGOALSINAR.png" alt="Logo PT. ALSINAR INDO ABADI" id="logo-img">
-        <div class="logo-text">
-          <strong id="logo-title">PT. ALSINAR INDO ABADI</strong>
-          <span id="logo-subtitle">General Supplier & Contractor</span>
-        </div>
-      </div>
-      <nav>
-        <ul id="menu">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">Tentang</a></li>
-          <li><a href="#vision">Visi & Misi</a></li>
-          <li><a href="#gallery">Galeri</a></li>
-          <li><a href="#contact">Kontak</a></li>
-        </ul>
-      </nav>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container nav-flex">
+    <span class="brand">ALSINAR</span>
+
+    <nav>
+      <ul id="menu">
+        <li><a href="#home" data-i18n="nav_home">Home</a></li>
+        <li><a href="#services" data-i18n="nav_services">Layanan</a></li>
+        <li><a href="#about" data-i18n="nav_about">Tentang</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <select id="langSwitch">
+        <option value="id">ID</option>
+        <option value="en">EN</option>
+      </select>
+      <button id="darkToggle">🌙</button>
       <div class="hamburger" onclick="toggleMenu()">
         <span></span><span></span><span></span>
       </div>
     </div>
-  </header>
-
-  <!-- HERO -->
-  <section id="hero" class="hero reveal">
-    <h1>Selamat Datang di PT. ALSINAR INDO ABADI</h1>
-    <p>Layanan profesional di General Supplier, Konstruksi, Scrap Iron & Catering</p>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="reveal">
-    <h2>Tentang Kami</h2>
-    <p>PT. ALSINAR INDO ABADI menyediakan layanan terpadu berkualitas tinggi dengan fokus pada kepuasan klien.</p>
-  </section>
-
-  <!-- VISION & MISSION -->
-  <section id="vision" class="reveal">
-    <h2>Visi & Misi</h2>
-    <h3>Visi</h3>
-    <p>Menjadi perusahaan penyedia layanan terpadu terpercaya dan unggul di berbagai bidang.</p>
-    <h3>Misi</h3>
-    <ul>
-      <li>Memberikan layanan terbaik di General Supplier & Contractor, konstruksi, scrap iron, dan catering.</li>
-      <li>Mengutamakan kepuasan klien melalui solusi efisien dan inovatif.</li>
-      <li>Membangun hubungan jangka panjang berbasis integritas dan transparansi.</li>
-      <li>Mendukung praktik bisnis berkelanjutan, khususnya pengelolaan scrap iron.</li>
-    </ul>
-  </section>
-
-  <!-- GALLERY -->
-  <section id="gallery" class="reveal">
-    <h2>Galeri Proyek</h2>
-    <p class="gallery-desc">Dokumentasi beberapa proyek PT. ALSINAR INDO ABADI</p>
-    <div class="gallery-grid">
-      <img src="images/gallery/proyek1.jpg" alt="Proyek Konstruksi" onclick="openLightbox(this)">
-      <img src="images/gallery/proyek2.jpg" alt="Scrap Iron" onclick="openLightbox(this)">
-      <img src="images/gallery/proyek3.jpg" alt="Supplier Industri" onclick="openLightbox(this)">
-      <img src="images/gallery/proyek4.jpg" alt="Proyek Lapangan" onclick="openLightbox(this)">
-    </div>
-  </section>
-
-  <!-- LIGHTBOX -->
-  <div id="lightbox" onclick="closeLightbox()">
-    <img id="lightbox-img" src="" alt="">
   </div>
+</header>
 
-  <!-- CONTACT -->
-  <section id="contact" class="reveal">
-    <h2>Kontak Kami</h2>
-    <p>Hubungi kami langsung melalui WhatsApp atau email, atau kunjungi kantor kami:</p>
-    <div class="contact-grid">
-      <a href="https://wa.me/081346860886" target="_blank" class="btn">WhatsApp: 0813-4686-0886</a>
-      <a href="mailto:info@alsinar.com" class="btn">Email: info@alsinar.com</a>
-    </div>
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE_HERE" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </section>
+<!-- HERO / LANDING -->
+<section id="home" class="hero reveal">
+  <img src="images/LOGOALSINAR.png" class="hero-logo">
+  <h1 data-i18n="hero_title">PT ALSINAR INDO ABADI</h1>
+  <p data-i18n="hero_subtitle">General Supplier & Contractor Terpercaya</p>
+  <a href="#contact" class="cta" data-i18n="hero_cta">Hubungi Kami</a>
+</section>
 
-  <script src="script.js"></script>
+<!-- SERVICES -->
+<section id="services" class="section reveal">
+  <div class="container">
+    <h2 data-i18n="services_title">Layanan Kami</h2>
+
+    <div class="services-grid">
+      <div class="service-card" data-i18n="service_1">General Supplier</div>
+      <div class="service-card" data-i18n="service_2">Kontraktor & Konstruksi</div>
+      <div class="service-card" data-i18n="service_3">Scrap Iron Management</div>
+      <div class="service-card" data-i18n="service_4">Catering Industri</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section alt reveal">
+  <div class="container narrow">
+    <h2 data-i18n="about_title">Tentang Perusahaan</h2>
+    <p data-i18n="about_text">
+      PT Alsinar Indo Abadi adalah perusahaan yang berkomitmen memberikan layanan profesional,
+      berkualitas tinggi, dan berkelanjutan di berbagai sektor industri.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+  <div class="container narrow center">
+    <h2 data-i18n="contact_title">Kontak Kami</h2>
+    <p data-i18n="contact_text">Siap menjadi mitra strategis bisnis Anda.</p>
+
+    <div class="contact-actions">
+      <a href="https://wa.me/6281346860886" class="btn">WhatsApp</a>
+      <a href="mailto:info@alsinar.com" class="btn outline">Email</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 PT ALSINAR INDO ABADI
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
