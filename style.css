@@ -101,11 +101,17 @@ nav a:hover::after{ width:100%; }
   cursor:pointer;
 }
 
-/* ================= HERO (FULL WIDTH FIX) ================= */
+/* ================= HERO (FULL WIDTH FIX 100%) ================= */
 .hero{
+  position:relative;
+
   width:100vw;
   min-height:100vh;
-  margin-left:calc(-50vw + 50%);
+
+  left:50%;
+  right:50%;
+  margin-left:-50vw;
+  margin-right:-50vw;
 
   display:flex;
   flex-direction:column;
@@ -348,7 +354,10 @@ body.dark footer{ background:#000; }
   .hero{
     min-height:85vh;
     background-size:220px;
-    margin-left:0;
+
+    left:0;
+    right:0;
+    margin:0;
     width:100%;
   }
 
