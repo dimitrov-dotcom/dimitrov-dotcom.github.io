@@ -1,172 +1,201 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PT. Alsinar Indo Abadi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
-  <meta name="description" content="PT Alsinar Indo Abadi - General Supplier & Contractor, Konstruksi, Sewa Kendaraan, Scrap Iron, Catering" />
-  <meta name="keywords" content="General Supplier, Contractor, Scrap Iron, Sewa Mobil, Catering" />
-  <meta name="author" content="PT Alsinar Indo Abadi" />
+<title>PT Alsinar Indo Abadi</title>
 
-  <!-- Google Search Console -->
-  <meta name="google-site-verification" content="pCdyaP5mfxLFCc3_x5S3Pi9AEjRLqXI7DevEmXT1eTA" />
+<!-- SEO -->
+<meta name="description" content="PT Alsinar Indo Abadi - General Supplier & Contractor, Konstruksi, Sewa Kendaraan, Scrap Iron, Catering">
+<meta name="keywords" content="General Supplier, Contractor, Scrap Iron, Sewa Mobil, Catering">
+<meta name="author" content="PT Alsinar Indo Abadi">
 
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- Google Search Console -->
+<meta name="google-site-verification" content="pCdyaP5mfxLFCc3_x5S3Pi9AEjRLqXI7DevEmXT1eTA" />
 
-  <style>
-    :root{
-      --bg:#020617;
-      --card:#020617cc;
-      --text:#e5e7eb;
-      --muted:#9ca3af;
-      --accent:#38bdf8;
-    }
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{
-      font-family:system-ui,-apple-system,Segoe UI,Roboto;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.6;
-    }
+<style>
+:root{
+  --bg:#020617;
+  --card:rgba(2,6,23,.75);
+  --text:#e5e7eb;
+  --muted:#94a3b8;
+  --accent:#38bdf8;
+}
 
-    /* HEADER */
-    header{
-      position:fixed;
-      top:0;
-      width:100%;
-      backdrop-filter:blur(12px);
-      background:rgba(2,6,23,.65);
-      border-bottom:1px solid rgba(255,255,255,.06);
-      z-index:1000;
-    }
+*{margin:0;padding:0;box-sizing:border-box}
 
-    .nav{
-      max-width:1200px;
-      margin:auto;
-      padding:16px 20px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+}
 
-    .logo img{
-      height:120px;
-    }
+/* HEADER */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(2,6,23,.65);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,.06);
+  z-index:1000;
+}
 
-    nav ul{
-      display:flex;
-      gap:28px;
-      list-style:none;
-    }
+.nav{
+  max-width:1200px;
+  margin:auto;
+  padding:20px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
 
-    nav a{
-      text-decoration:none;
-      color:var(--text);
-      font-size:14px;
-    }
+/* LOGO BESAR */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
 
-    nav a:hover{
-      color:var(--accent);
-    }
+.logo img{
+  height:78px; /* 🔥 LOGO BESAR */
+  width:auto;
+}
 
-    /* HAMBURGER */
-    .hamburger{
-      display:none;
-      flex-direction:column;
-      cursor:pointer;
-    }
+.logo-text{
+  display:flex;
+  flex-direction:column;
+  line-height:1.1;
+}
 
-    .hamburger span{
-      width:26px;
-      height:3px;
-      background:#fff;
-      margin:4px 0;
-      transition:.3s;
-    }
+.logo-text strong{
+  font-size:22px;
+  font-weight:800;
+  letter-spacing:1px;
+  color:var(--accent);
+}
 
-    /* SECTION */
-    section{
-      max-width:1200px;
-      margin:auto;
-      padding:120px 20px;
-    }
+.logo-text span{
+  font-size:13px;
+  letter-spacing:2px;
+  color:var(--muted);
+}
 
-    .hero{
-      padding-top:180px;
-      text-align:center;
-    }
+/* NAV */
+nav ul{
+  display:flex;
+  gap:28px;
+  list-style:none;
+}
 
-    .hero h1{
-      font-size:3rem;
-      font-weight:700;
-    }
+nav a{
+  text-decoration:none;
+  color:var(--text);
+  font-size:14px;
+}
 
-    .hero p{
-      margin-top:16px;
-      max-width:760px;
-      margin-inline:auto;
-      color:var(--muted);
-    }
+nav a:hover{color:var(--accent)}
 
-    .card{
-      background:var(--card);
-      border:1px solid rgba(255,255,255,.06);
-      border-radius:16px;
-      padding:28px;
-      margin-top:40px;
-    }
+/* HAMBURGER */
+.hamburger{
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+}
 
-    h2{
-      margin-bottom:16px;
-      color:var(--accent);
-    }
+.hamburger span{
+  width:26px;
+  height:3px;
+  background:#fff;
+  margin:4px 0;
+}
 
-    ul li{
-      margin-bottom:10px;
-    }
+/* SECTION */
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:120px 20px;
+}
 
-    footer{
-      text-align:center;
-      padding:40px 20px;
-      color:var(--muted);
-      border-top:1px solid rgba(255,255,255,.06);
-    }
+.hero{
+  padding-top:220px;
+  text-align:center;
+}
 
-    /* RESPONSIVE */
-    @media(max-width:768px){
-      nav ul{
-        position:absolute;
-        top:72px;
-        right:20px;
-        background:#020617;
-        flex-direction:column;
-        padding:20px;
-        border-radius:14px;
-        display:none;
-      }
+.hero h1{
+  font-size:3.2rem;
+  font-weight:800;
+}
 
-      nav ul.active{
-        display:flex;
-      }
+.hero p{
+  margin-top:18px;
+  max-width:780px;
+  margin-inline:auto;
+  color:var(--muted);
+}
 
-      .hamburger{
-        display:flex;
-      }
-    }
-  </style>
+.card{
+  background:var(--card);
+  border:1px solid rgba(255,255,255,.06);
+  border-radius:18px;
+  padding:32px;
+  margin-top:40px;
+}
+
+h2{
+  color:var(--accent);
+  margin-bottom:16px;
+}
+
+ul li{margin-bottom:10px}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:40px 20px;
+  border-top:1px solid rgba(255,255,255,.06);
+  color:var(--muted);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .logo img{height:58px}
+  .logo-text strong{font-size:17px}
+  .logo-text span{font-size:11px}
+
+  nav ul{
+    position:absolute;
+    top:90px;
+    right:20px;
+    background:#020617;
+    flex-direction:column;
+    padding:20px;
+    border-radius:14px;
+    display:none;
+  }
+
+  nav ul.active{display:flex}
+  .hamburger{display:flex}
+}
+</style>
 </head>
 
 <body>
 
 <header>
   <div class="nav">
+
     <div class="logo">
-      <!-- GANTI DENGAN LOGO KAMU -->
       <img src="images/LOGOALSINAR.png" alt="PT Alsinar Indo Abadi">
+      <div class="logo-text">
+        <strong>ALSINAR</strong>
+        <span>INDO ABADI</span>
+      </div>
     </div>
 
     <nav>
@@ -182,11 +211,12 @@
     <div class="hamburger" onclick="toggleMenu()">
       <span></span><span></span><span></span>
     </div>
+
   </div>
 </header>
 
 <section id="home" class="hero" data-aos="fade-up">
-  <h1>PT. Alsinar Indo Abadi</h1>
+  <h1>PT Alsinar Indo Abadi</h1>
   <p>
     Perusahaan penyedia layanan terpadu di bidang General Supplier & Contractor,
     konstruksi bangunan, sewa kendaraan operasional, pengolahan scrap iron,
@@ -198,8 +228,8 @@
   <div class="card">
     <h2>Tentang Perusahaan</h2>
     <p>
-      PT Alsinar Indo Abadi berkomitmen memberikan solusi bisnis yang efisien,
-      inovatif, dan berkelanjutan melalui layanan profesional di berbagai sektor.
+      PT Alsinar Indo Abadi berkomitmen memberikan layanan terbaik dengan
+      mengutamakan kualitas, ketepatan waktu, dan profesionalisme.
     </p>
   </div>
 </section>
@@ -208,17 +238,16 @@
   <div class="card">
     <h2>Visi</h2>
     <p>
-      Menjadi perusahaan penyedia layanan terpadu yang terpercaya dan unggul
-      dengan mengutamakan kualitas, profesionalisme, dan kepuasan pelanggan.
+      Menjadi perusahaan penyedia layanan terpadu yang terpercaya dan unggul.
     </p>
 
     <h2>Misi</h2>
     <ul>
-      <li>Memberikan layanan berkualitas tinggi di setiap bidang usaha</li>
-      <li>Mengutamakan kepuasan klien dengan solusi tepat waktu</li>
-      <li>Membangun hubungan jangka panjang berbasis kepercayaan</li>
-      <li>Mengembangkan tim profesional dan berdedikasi</li>
-      <li>Mendukung praktik bisnis berkelanjutan & ramah lingkungan</li>
+      <li>Layanan berkualitas tinggi di setiap bidang usaha</li>
+      <li>Solusi efisien dan inovatif bagi klien</li>
+      <li>Hubungan bisnis jangka panjang berbasis kepercayaan</li>
+      <li>Tim profesional dan berdedikasi</li>
+      <li>Bisnis berkelanjutan & ramah lingkungan</li>
     </ul>
   </div>
 </section>
@@ -230,7 +259,7 @@
       <li>General Supplier & Contractor</li>
       <li>Konstruksi Bangunan</li>
       <li>Sewa Kendaraan Operasional</li>
-      <li>Pengolahan Scrap Iron (Besi Tua)</li>
+      <li>Pengolahan Scrap Iron</li>
       <li>Jasa Catering</li>
     </ul>
   </div>
@@ -245,16 +274,15 @@
 </section>
 
 <footer>
-  © 2025 PT. Alsinar Indo Abadi. All rights reserved.
+  © 2025 PT Alsinar Indo Abadi. All rights reserved.
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init({duration:900,once:true});
-
-  function toggleMenu(){
-    document.getElementById("menu").classList.toggle("active");
-  }
+AOS.init({duration:900,once:true});
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+}
 </script>
 
 </body>
