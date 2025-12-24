@@ -30,16 +30,16 @@
 
   <nav>
     <ul id="menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Layanan</a></li>
-      <li><a href="#about">Tentang</a></li>
-      <li><a href="#gallery">Galeri</a></li>
-      <li><a href="#contact">Kontak</a></li>
+      <li><a href="#home"data-i18n="nav_home">Home</a></li>
+      <li><a href="#services"data-i18n="nav_services">Layanan</a></li>
+      <li><a href="#about"data-i18n="nav_about">Tentang</a></li>
+      <li><a href="#gallery"data-i18n="nav_gallery">Galeri</a></li>
+      <li><a href="#contact"data-i18n="nav_contact">Kontak</a></li>
     </ul>
   </nav>
 
-  <button class="lang-btn">ID</button>
-  <button class="lang-btn">EN</button>
+  <button class="lang-btn"id="btn-id" onclick="setLang('id')">ID</button>
+  <button class="lang-btn"id="btn-en" onclick="setLang('en')">EN</button>
 
   <div class="hamburger" onclick="toggleMenu()">
     <span></span><span></span><span></span>
@@ -49,20 +49,20 @@
 <!-- ================= HERO ================= -->
 <section id="home" class="hero reveal">
   <img src="images/LOGOALSINAR.png" class="hero-logo">
-  <h1>PT ALSINAR INDO ABADI</h1>
-  <p>General Supplier & Contractor Terpercaya</p>
-  <a href="#contact" class="cta">Hubungi Kami</a>
+  <h1 data-i18n="hero_title">PT ALSINAR INDO ABADI</h1>
+  <p data-i18n="hero_subtitle">General Supplier & Contractor Terpercaya</p>
+  <a href="#contact" class="cta data-i18n="hero_cta">Hubungi Kami</a>
 </section>
 
 <!-- ================= SERVICES ================= -->
 <section id="services" class="section reveal">
   <div class="container">
-    <h2>Layanan Kami</h2>
+    <h2 data-i18n="services_title">Layanan Kami</h2>
 
     <div class="services-grid">
-      <div class="service-card">General Supplier</div>
-      <div class="service-card">Manajemen Scrap Iron (Besi tua)</div>
-      <div class="service-card">Kontraktor dan Konstruksi</div>
+      <div class="service-card"data-i18n="service_1">General Supplier</div>
+      <div class="service-card"data-i18n="service_2">Manajemen Scrap Iron (Besi tua)</div>
+      <div class="service-card"data-i18n="service_3">Kontraktor dan Konstruksi</div>
     </div>
   </div>
 </section>
@@ -72,8 +72,8 @@
   <div class="container">
 
     <div class="about-header">
-      <h2>Tentang Perusahaan</h2>
-      <p class="about-lead">
+      <h2 data-i18n="about_title">Tentang Perusahaan</h2>
+      <p class="about-lead" data-i18n="about_desc">
         PT Alsinar Indo Abadi adalah perusahaan yang bergerak di bidang
         General Supplier & Contractor dengan komitmen memberikan layanan
         profesional, berkualitas tinggi, dan berkelanjutan.
@@ -82,20 +82,20 @@
 
     <div class="vm-grid">
       <div class="vm-card reveal delay-1">
-        <h3>Visi</h3>
-        <p>
+        <h3 data-i18n="vision_title">Visi</h3>
+        <p data-i18n="vision_desc">
           Menjadi perusahaan penyedia layanan terpadu yang terpercaya,
           profesional, dan unggul dalam mendukung kebutuhan industri nasional.
         </p>
       </div>
 
       <div class="vm-card reveal delay-2">
-        <h3>Misi</h3>
+        <h3 data-i18n="mission_title">Misi</h3>
         <ul>
-          <li>Memberikan layanan General Supplier & Contractor yang berkualitas tinggi.</li>
-          <li>Mengutamakan kepuasan klien melalui solusi yang efisien dan inovatif.</li>
-          <li>Membangun hubungan jangka panjang berbasis integritas dan kepercayaan.</li>
-          <li>Mendukung praktik bisnis yang berkelanjutan dan ramah lingkungan.</li>
+          <li data-i18n="mission_1">Memberikan layanan General Supplier & Contractor yang berkualitas tinggi.</li>
+          <li data-i18n="mission_2">Mengutamakan kepuasan klien melalui solusi yang efisien dan inovatif.</li>
+          <li data-i18n="mission_3">Membangun hubungan jangka panjang berbasis integritas dan kepercayaan.</li>
+          <li data-i18n="mission_4">Mendukung praktik bisnis yang berkelanjutan dan ramah lingkungan.</li>
         </ul>
       </div>
     </div>
@@ -106,7 +106,7 @@
 <!-- ================= GALLERY ================= -->
 <section id="gallery" class="section reveal">
   <div class="container">
-    <h2>Galeri Proyek</h2>
+    <h2 data-i18n="gallery_title">Galeri Proyek</h2>
 
     <div class="gallery-grid">
       <img src="images/gallery/proyek1.jpg">
