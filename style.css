@@ -584,11 +584,14 @@ body.dark .nav.scrolled{
   inset: 0;
   backface-visibility: hidden;
   border-radius: 16px;
-  padding: 24px;
+  padding: 20px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  box-sizing: border-box;
 }
 
 /* Front */
@@ -607,4 +610,18 @@ body.dark .nav.scrolled{
 /* Mobile tap */
 .flip-card:active .flip-inner{
   transform: rotateY(180deg);
+}
+/* ===============================
+   FIX UKURAN CARD (WAJIB)
+================================ */
+.service-card{
+  height: 180px;
+}
+
+.vm-card{
+  height: 220px;
+}
+.services-grid,
+.vm-grid{
+  align-items: stretch;
 }
