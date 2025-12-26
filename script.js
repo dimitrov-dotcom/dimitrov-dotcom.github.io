@@ -173,9 +173,9 @@ if(track){
 
   setInterval(() => {
     index++;
-    if(index > total - 3){
+    if(index > total - 1){
       index = 0;
     }
     track.style.transform = `translateX(-${index * slideWidth}px)`;
-  }, 4000);
+  }, 3000);
 }
