@@ -625,3 +625,124 @@ body.dark .nav.scrolled{
 .vm-grid{
   align-items: stretch;
 }
+/* JARAK JUDUL DI FLIP CARD */
+.flip-front h3{
+  margin-bottom: 10px;
+}
+
+.flip-front p{
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+.flip-front p{
+  font-size: 13px;
+  font-style: italic;
+  opacity: 0.85;
+}/* ===============================
+   VISI - WARNA BIRU
+================================ */
+.vm-card.vision .flip-front{
+  border-top: 4px solid var(--primary);
+}
+
+.vm-card.vision h3{
+  color: var(--primary);
+}
+
+.vm-card.vision::after{
+  background: radial-gradient(
+    circle,
+    rgba(13,59,102,0.45),
+    transparent 65%
+  );
+}
+/* ===============================
+   MISI - WARNA EMAS
+================================ */
+.vm-card.mission .flip-front{
+  border-top: 4px solid var(--accent);
+}
+
+.vm-card.mission h3{
+  color: var(--accent);
+}
+
+.vm-card.mission::after{
+  background: radial-gradient(
+    circle,
+    rgba(214,177,94,0.5),
+    transparent 65%
+  );
+}.vm-card.vision .flip-back{
+  background: linear-gradient(135deg, #0d3b66, #1d4ed8);
+}
+
+.vm-card.mission .flip-back{
+  background: linear-gradient(135deg, #d6b15e, #b8963f);
+}
+/* ===============================
+   SERVICE - GENERAL SUPPLIER
+================================ */
+.service-card.supplier .flip-front{
+  border-top: 4px solid var(--primary);
+}
+
+.service-card.supplier h3{
+  color: var(--primary);
+}
+
+.service-card.supplier::after{
+  background: radial-gradient(
+    circle,
+    rgba(13,59,102,0.45),
+    transparent 65%
+  );
+}
+/* ===============================
+   SERVICE - SCRAP IRON
+================================ */
+.service-card.scrap .flip-front{
+  border-top: 4px solid #22c55e;
+}
+
+.service-card.scrap h3{
+  color: #22c55e;
+}
+
+.service-card.scrap::after{
+  background: radial-gradient(
+    circle,
+    rgba(34,197,94,0.45),
+    transparent 65%
+  );
+}
+/* ===============================
+   SERVICE - KONTRAKTOR
+================================ */
+.service-card.contractor .flip-front{
+  border-top: 4px solid var(--accent);
+}
+
+.service-card.contractor h3{
+  color: var(--accent);
+}
+
+.service-card.contractor::after{
+  background: radial-gradient(
+    circle,
+    rgba(214,177,94,0.5),
+    transparent 65%
+  );
+}
+.service-card.supplier .flip-back{
+  background: linear-gradient(135deg,#0d3b66,#1d4ed8);
+}
+
+.service-card.scrap .flip-back{
+  background: linear-gradient(135deg,#16a34a,#4ade80);
+}
+
+.service-card.contractor .flip-back{
+  background: linear-gradient(135deg,#d6b15e,#b8963f);
+}
