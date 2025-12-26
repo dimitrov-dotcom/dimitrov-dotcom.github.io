@@ -415,3 +415,8 @@ body.dark .nav.scrolled{
   transform:translateX(0);
 }
 
+/* FORCE TEST - JANGAN PERMANEN */
+.vm-card{
+  opacity:1 !important;
+  transform:none !important;
+}

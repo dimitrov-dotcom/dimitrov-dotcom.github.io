@@ -42,7 +42,9 @@ function closeLightbox() {
 /* =====================================================
    SCROLL REVEAL (HALUS)
 ===================================================== */
-const reveals = document.querySelectorAll(".reveal");
+const reveals = document.querySelectorAll(
+  ".reveal, .reveal-left, .reveal-right"
+);
 
 function revealOnScroll() {
   const windowHeight = window.innerHeight;
