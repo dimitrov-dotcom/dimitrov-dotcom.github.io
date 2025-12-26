@@ -464,3 +464,147 @@ body.dark .nav.scrolled{
   transform: none !important;
   visibility: visible !important;
 }
+/* ===============================
+   INTERACTIVE CARD EFFECT
+   (Hover & Tap)
+================================ */
+
+/* Target semua card */
+.service-card,
+.vm-card{
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover (Desktop) */
+.service-card:hover,
+.vm-card:hover{
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+  z-index: 5;
+}
+
+/* Tap / Click (Mobile) */
+.service-card:active,
+.vm-card:active{
+  transform: scale(1.05);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.2);
+}
+
+/* Supaya tidak ketiban section lain */
+.services-grid,
+.vm-grid{
+  position: relative;
+}
+/* ======================================
+   GOLD GLOW INTERACTIVE EFFECT
+====================================== */
+
+/* Target card */
+.service-card,
+.vm-card{
+  position: relative;
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+/* Hover (Desktop) */
+.service-card:hover,
+.vm-card:hover{
+  transform: translateY(-8px) scale(1.04);
+  box-shadow:
+    0 0 0 2px rgba(214,177,94,0.6),
+    0 0 25px rgba(214,177,94,0.55),
+    0 18px 40px rgba(0,0,0,0.18);
+  z-index: 5;
+}
+
+/* Tap / Click (Mobile) */
+.service-card:active,
+.vm-card:active{
+  transform: scale(1.06);
+  box-shadow:
+    0 0 0 3px rgba(214,177,94,0.7),
+    0 0 35px rgba(214,177,94,0.65),
+    0 22px 45px rgba(0,0,0,0.22);
+}
+
+/* Efek glow animasi halus */
+.service-card::after,
+.vm-card::after{
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle,
+    rgba(214,177,94,0.45),
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+/* Aktifkan glow */
+.service-card:hover::after,
+.vm-card:hover::after,
+.service-card:active::after,
+.vm-card:active::after{
+  opacity: 1;
+}/* ======================================
+   FLIP CARD EFFECT (DESKTOP + MOBILE)
+====================================== */
+
+.flip-card{
+  perspective: 1200px;
+}
+
+.flip-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+}
+
+/* Hover Desktop */
+.flip-card:hover .flip-inner{
+  transform: rotateY(180deg);
+}
+
+/* Front & Back */
+.flip-front,
+.flip-back{
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Front */
+.flip-front{
+  background: #fff;
+  color: #111;
+}
+
+/* Back */
+.flip-back{
+  background: linear-gradient(135deg,var(--primary),var(--secondary));
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+/* Mobile tap */
+.flip-card:active .flip-inner{
+  transform: rotateY(180deg);
+}
