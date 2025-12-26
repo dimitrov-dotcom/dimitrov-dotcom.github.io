@@ -924,3 +924,18 @@ body.dark .nav.scrolled{
   color: #fff;
   cursor: pointer;
 }
+/* MAPS */
+.map-wrapper{
+  width:100%;
+  max-width:1000px;
+  margin:30px auto 0;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+.map-wrapper iframe{
+  width:100%;
+  height:380px;
+  border:0;
+}
