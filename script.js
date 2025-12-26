@@ -160,3 +160,22 @@ function setLang(lang) {
 document.addEventListener("DOMContentLoaded", () => {
   setLang(localStorage.getItem("lang") || "id");
 });
+/* ===============================
+   GALERI AUTO SLIDE 3 DETIK
+================================ */
+const track = document.querySelector(".gallery-track");
+
+if(track){
+  let index = 0;
+  const images = track.children;
+  const total = images.length;
+  const slideWidth = images[0].offsetWidth + 16;
+
+  setInterval(() => {
+    index++;
+    if(index > total - 3){
+      index = 0;
+    }
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+  }, 4000);
+}
