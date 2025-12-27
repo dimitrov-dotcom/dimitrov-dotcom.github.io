@@ -131,7 +131,7 @@ nav a{
   text-align:center;
 }
 .flip-front{
-  background:#fff;
+  background:#d6b15e;
 }
 .flip-back{
   background:linear-gradient(135deg,var(--primary),var(--secondary));
